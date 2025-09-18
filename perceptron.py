@@ -26,19 +26,6 @@ def activation(self, x):
     return np.where(x >= 0, 1, 0)
 
 def fit(self, X, y):
-        """
-        Treina o perceptron usando a regra de atualização:
-        w = w + η * (y_real - y_pred) * x
-        
-        Parâmetros:
-        -----------
-        X : array-like, shape = [n_samples, n_features]
-            Dados de treinamento
-        y : array-like, shape = [n_samples]
-            Rótulos verdadeiros (0 ou 1)
-        X_val, y_val : arrays opcionais
-            Dados de validação para acompanhar o progresso
-        """
         n_samples, n_features = X.shape
         
         # PASSO 1: Inicialização dos pesos
@@ -80,3 +67,22 @@ def fit(self, X, y):
                 print(f"Convergiu na época {epoch + 1}")
                 break
 
+def net_input(self, X):
+        """Calcula a entrada líquida (weighted sum + bias)"""
+        return np.dot(X, self.weights) + self.bias
+    
+def predict(self, X):
+        """
+        Faz predições para novos dados.
+        
+        Parâmetros:
+        -----------
+        X : array-like, shape = [n_samples, n_features]
+            Dados para predição
+        
+        Retorna:
+        --------
+        array, shape = [n_samples]
+            Classes preditas
+        """
+        return self.activation(self.net_input(X))

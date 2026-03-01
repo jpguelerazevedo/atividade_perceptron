@@ -1,4 +1,4 @@
-# Relatório Final - Atividade Prática Perceptron.
+# Relatório Final - Atividade Prática Perceptron
 
 **Dupla:** Leonardo Rodrigues Cavalcante & João Paulo Gueller Azevedo  
 

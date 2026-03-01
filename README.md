@@ -1,4 +1,4 @@
-# Relatório Final - Atividade Prática Perceptron.
+# Relatório Final - Atividade Prática Perceptron
 
 **Dupla:** Leonardo Rodrigues Cavalcante & João Paulo Gueller Azevedo  
 
@@ -143,3 +143,4 @@
 - **Melhorias sugeridas:** Usar distância mínima de 2.0 unidades entre centros para garantir convergência.
 
 - **Comparação com expectativas:** Confirmou relação direta entre separação geométrica e desempenho.
+

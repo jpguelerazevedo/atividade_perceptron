@@ -144,3 +144,4 @@
 
 - **Comparação com expectativas:** Confirmou relação direta entre separação geométrica e desempenho.
 
+
